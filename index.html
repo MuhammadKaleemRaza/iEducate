@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iEducate</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="nav-bar background h-nav" id="home">
+        <ul class="nav-list v-class">
+            <div class="logo"><img src="—Pngtree—school education logo_4136139.png" alt="logo.jpg"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="right-nav v-class">
+            <input type="search" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background  firstSection" id="about">
+        <div class="main-box">
+            <div class="firstHalf">
+                <p class="big-Text">
+                    The future of education is Here!
+                </p>
+                <p class="small-Text">
+                    We are proud to educate your children in this chaotic world, where seven billion people are ready to
+                    take your place for thier survival.
+                </p>
+                <div class="buttons">
+                    <button class="btn">Read More....</button>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="—Pngtree—school education logo_4136139.png" alt="logo.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="rightSection" id="services">
+        <div class="paras">
+            <p class="sectionTag">The End Of Your Search Is Here.</p>
+            <p class="sectionSubTag">Only about 67.5% of Pakistani children finish primary school education.[14] The
+                standard national system of education is mainly inspired from the English educational system. Pre-school
+                education is designed for 3–5 years old and usually consists of three stages: Play Group, Nursery and
+                Kindergarten (also called 'KG' or 'Prep'). After pre-school education, students go through junior school
+                from grades 1 to 5. Only about 67.5% of Pakistani children finish primary school education.[14]. </p>
+        </div>
+        <div class="first-thumbnail">
+            <img src="img-1.jpg" alt="" class="fluid">
+        </div>
+    </section>
+    <section class="leftSection">
+        <div class="paras">
+            <p class="sectionTag">We Provide Better Education!</p>
+            <p class="sectionSubTag">Most schools also offer drama studies, music and physical education but these are
+                usually not examined or marked. Home economics is sometimes taught to female students, whereas topics
+                related to astronomy, environmental management and psychology are frequently included in textbooks of
+                general science. Sometimes archaeology and anthropology are extensively taught in textbooks of social
+                studies.</p>
+        </div>
+        <div class="first-thumbnail">
+            <img src="img-2.jpg" alt="" class="fluid">
+        </div>
+    </section>
+    <section class="rightSection">
+        <div class="paras">
+            <p class="sectionTag">iEducate Provide Best Experince Staff!</p>
+            <p class="sectionSubTag">Secondary education in Pakistan begins in grade 9 and lasts for four years. After
+                end of each of the school years, students are required to pass a national examination administered by a
+                regional Board of Intermediate and Secondary Education (or BISE).
+
+                Upon completion of grade 9, students are expected to take a standardised test in each of the first parts
+                of their academic subjects (SSC-I). </p>
+        </div>
+        <div class="first-thumbnail">
+            <img src="img-3.jpg" alt="" class="fluid">
+        </div>
+    </section>
+    <hr>
+    <section class="contact" id="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name Here" required>
+        </div>
+        <div class="form">
+            <label for="Email">E-mail: </label>
+            <input type="text" id="Email" name="Email" placeholder="Enter Your Email Here" required>
+        </div>
+        <div class="form">
+            <label for="phone">Phone: </label>
+            <input type="phone" id="phone" name="phone" placeholder="Enter Your Number Here">
+        </div>
+        <div class="form">
+            <textarea name="text" id="text" cols="60" rows="10"
+                placeholder="Please Elaborate Your Concern Here"></textarea>
+        </div>
+        <div class="button-sub">
+            <button class="btn">Submit</button>
+        </div>
+    </section>
+
+    <footer id="footer" class="background">
+        copyright © 2021 www.iEducate.com - All rights reserved
+    </footer>
+  <script>
+    let burger = document.querySelector('.burger');
+let navBar = document.querySelector('.nav-bar');
+let navList = document.querySelector('.nav-list');
+let rightNav = document.querySelector('.right-nav');
+
+burger.addEventListener("click", () => {
+    navBar.classList.toggle('h-nav');
+    rightNav.classList.toggle('v-class');
+    navList.classList.toggle('v-class');
+})
+  	</script>
+
+</body>
+</html>
